@@ -1,0 +1,150 @@
+@import "reset.css";
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.main-screen {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#clock {
+  font-size: 160px;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+.clicked {
+  color: tomato;
+}
+
+.sexy-font {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+input {
+  border: None;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+  outline: None;
+}
+
+h1 {
+  transition: color 1s ease-in-out;
+  font-size: 32px;
+  position: absolute;
+  bottom: 35%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+#login-form {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 35%;
+}
+
+.hidden {
+  display: None !important;
+}
+
+#login-form input {
+  height: 60px;
+  font-size: 32px;
+}
+
+#login-form button {
+  border: None;
+  background-color: transparent;
+  height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+#todo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#todo input {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#todo-list {
+  text-align: left;
+  font-size: 15px;
+  margin: 2px 0;
+}
+
+#todo-list span {
+  display: block;
+  margin-left: 7px;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#todo-list li button {
+  border-radius: 10px;
+  height: 15px;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+#quote span:first-child {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#weather {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+}

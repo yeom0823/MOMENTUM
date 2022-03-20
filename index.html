@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Momentum</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <main class="main-screen">
+            <h2 id="clock">00:00:00</h2>
+            <form id="login-form" class="hidden">
+                <input required
+                    maxlength = "7"
+                    type="text" 
+                    placeholder="Hello, what is your name?"
+                    onfocus ="this.placeholder=''"
+                    onblur="this.placeholder='Hello, what is your name?'"
+                    />
+                <button style="cursor:pointer"><i class="fa-solid fa-right-to-bracket fa-lg"></i></button>    
+                
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+            <div id="todo">
+                <form id="todo-form">
+                    <input type = "text" 
+                        placeholder="Write a Todo list"
+                        />
+                </form>
+                <ul id="todo-list">
+                </ul>
+            </div>
+            <div id ="quote"> 
+                <span></span>
+                <span></span>
+            </div>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+        </main>
+        <script src="js/greetings.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/backgrounds.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="https://kit.fontawesome.com/7f14cfbc1f.js" crossorigin="anonymous"></script>
+    </body>
+</html>
